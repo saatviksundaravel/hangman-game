@@ -1,0 +1,26 @@
+.grid_container{
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px;
+    grid-row-gap: 20px;
+    grid-column-gap:20px;
+    justify-content: center;
+}
+
+
+
+.scores{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 130px;
+}
+
+#heading{
+    background: red;
+    border-radius: 15px;
+    padding: 10px;
+    color: white;
+    float: none;
+    width: 300px;
+}

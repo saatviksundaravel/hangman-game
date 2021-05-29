@@ -1,0 +1,85 @@
+<html>
+
+<head>
+
+    <title>hangman</title>
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="main.js"></script>
+
+</head>
+
+<body style="background-color: #165614; padding-top: 20px;" onload="initialize()">
+
+    <div id="headingDiv" style="padding-bottom: 20px;">
+        <center>
+        <h1 id="heading">HANG-MAN</h1>
+    </center>
+
+    </div>
+    
+    <div id="gameContent">
+        <div class="left_side col-lg-6 col-md-6 col-sm-12 col-xs-12" style="align-content: center;">
+
+            <center>
+            <img id="hangManImage" src="img0.png" height="70%" width="auto" style="padding: 50px;" />
+            <button class="btn btn-danger" id="playAgain" onclick="playAgain()">PLAY AGAIN</button>
+            <h1 id="guessingWord" style="color: white; margin-top: 10px;">_ _ P _ R _</h1>
+            </center>
+
+        </div>
+
+        <div class="right_side col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+            <div class="scores" style="margin-bottom: 50px; margin-top: 50px;">
+                <p id="games_won" class="small_text" style="color: white;">Games won: 2</p>
+                <p id="total_games" class="small_text" style="color: white;">Total games: 5</p>
+            </div>
+
+            <div class="grid_container ">
+
+                <button id="buttonA" class="btn btn-primary" onclick="buttonClicked(this.id)">A</button>
+                <button id="buttonB" class="btn btn-primary" onclick="buttonClicked(this.id)">B</button>
+                <button id="buttonC" class="btn btn-primary" onclick="buttonClicked(this.id)">C</button>
+                <button id="buttonD" class="btn btn-primary" onclick="buttonClicked(this.id)">D</button>
+                <button id="buttonE" class="btn btn-primary" onclick="buttonClicked(this.id)">E</button>
+                <button id="buttonF" class="btn btn-primary" onclick="buttonClicked(this.id)">F</button>
+                <button id="buttonG" class="btn btn-primary" onclick="buttonClicked(this.id)">G</button>
+                <button id="buttonH" class="btn btn-primary" onclick="buttonClicked(this.id)">H</button>
+                <button id="buttonI" class="btn btn-primary" onclick="buttonClicked(this.id)">I</button>
+                <button id="buttonJ" class="btn btn-primary" onclick="buttonClicked(this.id)">J</button>
+                <button id="buttonK" class="btn btn-primary" onclick="buttonClicked(this.id)">K</button>
+                <button id="buttonL" class="btn btn-primary" onclick="buttonClicked(this.id)">L</button>
+                <button id="buttonM" class="btn btn-primary" onclick="buttonClicked(this.id)">M</button>
+                <button id="buttonN" class="btn btn-primary" onclick="buttonClicked(this.id)">N</button>
+                <button id="buttonO" class="btn btn-primary" onclick="buttonClicked(this.id)">O</button>
+                <button id="buttonP" class="btn btn-primary" onclick="buttonClicked(this.id)">P</button>
+                <button id="buttonQ" class="btn btn-primary" onclick="buttonClicked(this.id)">Q</button>
+                <button id="buttonR" class="btn btn-primary" onclick="buttonClicked(this.id)">R</button>
+                <button id="buttonS" class="btn btn-primary" onclick="buttonClicked(this.id)">S</button>
+                <button id="buttonT" class="btn btn-primary" onclick="buttonClicked(this.id)">T</button>
+                <button id="buttonU" class="btn btn-primary" onclick="buttonClicked(this.id)">U</button>
+                <button id="buttonV" class="btn btn-primary" onclick="buttonClicked(this.id)">V</button>
+                <button id="buttonW" class="btn btn-primary" onclick="buttonClicked(this.id)">W</button>
+                <button id="buttonX" class="btn btn-primary" onclick="buttonClicked(this.id)">X</button>
+                <button id="buttonY" class="btn btn-primary" onclick="buttonClicked(this.id)">Y</button>
+                <button id="buttonZ" class="btn btn-primary" onclick="buttonClicked(this.id)">Z</button>
+
+            </div>
+
+            <h1 id="gameResult" style="color: white; margin-top: 50px; text-align: center;">You lost :(</h1>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
